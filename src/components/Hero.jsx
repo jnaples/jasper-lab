@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <Container>
       <div className="w-full">
-        <h1 className="text-8xl font-thin mb-10 text-center max-w-screen-xl">
+        <h1 className="text-8xl font-thin mb-10 text-center max-w-screen-xl break-words">
           Custom design meets webflow development
         </h1>
       </div>

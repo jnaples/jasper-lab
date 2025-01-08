@@ -21,13 +21,8 @@ export default function NavBar() {
         className="mx-auto flex items-center justify-between gap-x-6 mb-10"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <img
-              alt=""
-              src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-              className="h-8 w-auto"
-            />
+          <a href="#" className="">
+            <img alt="logo" src="/logo.png" className="w-36" />
           </a>
         </div>
 
