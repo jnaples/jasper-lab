@@ -29,7 +29,7 @@ export default function NavBar() {
         <div className="flex flex-1 items-center justify-end gap-x-6">
           <a
             href="#"
-            className="rounded-full bg-slate-900 px-5 py-2  text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-base"
+            className="rounded-full bg-slate-900 px-5 py-2 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-base transition-all duration-300 ease-in-out"
           >
             Let's talk
           </a>
