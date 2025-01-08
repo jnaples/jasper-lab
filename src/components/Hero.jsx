@@ -10,7 +10,7 @@ export default function Hero() {
         </h1>
       </div>
 
-      <div className="bg-black rounded-2xl overflow-hidden h-[500px] relative">
+      <div className="bg-black rounded-2xl h-[500px] relative">
         <div className="bg-white absolute top-[-1px] right-0 rounded-bl-2xl z-10">
           <p className="p-6">hello world</p>
           <RoundCorner className="top-0 left-[-16] w-4 h-4" />
@@ -26,7 +26,7 @@ export default function Hero() {
         <video
           src="/hero-video.mp4"
           alt="hero video of geometric object"
-          className="w-full object-cover"
+          className="w-full h-full object-cover rounded-2xl"
           priority="true"
           sizes="100%"
           autoPlay
