@@ -11,7 +11,7 @@ const navigation = [
   { name: "Company", href: "#" },
 ];
 
-export default function NavBar({ setContactForm }) {
+export default function NavBar({}) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -27,10 +27,7 @@ export default function NavBar({ setContactForm }) {
         </div>
 
         <div className="flex flex-1 items-center justify-end gap-x-6">
-          <a
-            onClick={() => setContactForm(true)}
-            className="rounded-full bg-slate-900 px-5 py-2 text-white shadow-sm hover:bg-indigo-500  text-base transition-all duration-300 ease-in-out cursor-pointer"
-          >
+          <a className="rounded-full bg-slate-900 px-5 py-2 text-white shadow-sm hover:bg-indigo-500  text-base transition-all duration-300 ease-in-out cursor-pointer">
             Let's talk
           </a>
         </div>
