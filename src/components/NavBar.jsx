@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 const navigation = [
   { name: "Product", href: "#" },
@@ -27,9 +28,12 @@ export default function NavBar({}) {
         </div>
 
         <div className="flex flex-1 items-center justify-end gap-x-6">
-          <a className="rounded-full bg-slate-900 px-5 py-2 text-white shadow-sm hover:bg-indigo-500  text-base transition-all duration-300 ease-in-out cursor-pointer">
-            Let's talk
-          </a>
+          <Link
+            href="/contact"
+            className="rounded-full bg-slate-900 px-5 py-2 text-white shadow-sm hover:bg-indigo-500  text-base transition-all duration-300 ease-in-out cursor-pointer"
+          >
+            Let's chat
+          </Link>
         </div>
         <div className="flex">
           <button
@@ -55,12 +59,12 @@ export default function NavBar({}) {
           transition
         >
           <div className="flex justify-end items-center gap-x-6">
-            <a
-              href="#"
-              className="rounded-full bg-slate-900 px-5 py-2  text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-base"
+            <Link
+              href="/contact"
+              className="rounded-full bg-slate-900 px-5 py-2 text-white shadow-sm hover:bg-indigo-500  text-base transition-all duration-300 ease-in-out cursor-pointer"
             >
-              Let's talk
-            </a>
+              Let's chat
+            </Link>
             <button
               type="button"
               onClick={() => setMenuOpen(false)}

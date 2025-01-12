@@ -6,11 +6,13 @@ import TextArea from "./TextArea";
 import Button from "./Button";
 import { useForm } from "react-hook-form";
 import FormRow from "./FormRow";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 function ContactUsForm() {
-  const { register, handleSubmit, formState, reset } = useForm();
+  const { register, handleSubmit, formState, reset, isSubmitSuccessful } =
+    useForm();
   const form = useRef();
+  const [successMessage, setSuccessMessage] = useState(true); // New state for success message
 
   const { errors } = formState;
 
@@ -42,7 +44,7 @@ function ContactUsForm() {
     <form
       ref={form}
       onSubmit={handleSubmit(onSubmit, onError)}
-      className="flex flex-col"
+      className="flex flex-col items-end w-full"
     >
       <FormRow error={errors?.user_name?.message} label="Name *">
         <Input
@@ -55,7 +57,6 @@ function ContactUsForm() {
           })}
         />
       </FormRow>
-
       <FormRow error={errors?.user_email?.message} label="Email *">
         <Input
           id="email"
@@ -72,7 +73,6 @@ function ContactUsForm() {
           })}
         />
       </FormRow>
-
       <FormRow error={errors?.message?.message} label="Message *">
         <TextArea
           label="Message *"
@@ -89,8 +89,10 @@ function ContactUsForm() {
           })}
         />
       </FormRow>
-
       <Button text="Submit" type="submit" />
+      {successMessage && (
+        <p className="mt-4 text-green-600">Form submitted successfully!</p>
+      )}{" "}
     </form>
   );
 }
