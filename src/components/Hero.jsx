@@ -17,7 +17,7 @@ export default function Hero() {
             design websites – we craft digital experiences that amplify your
             impact and success.
           </p>
-          <RoundCorner className="top-0 left-[-16] w-4 h-4" />
+          <RoundCorner className="top-0 left-[-16px] w-4 h-4" />
           <RoundCorner className="bottom-[-15.5px] right-0" />
         </div>
 
