@@ -19,7 +19,7 @@ export default function NavBarLight({}) {
     <header>
       <nav
         aria-label="Global"
-        className="mx-auto flex items-center justify-between gap-x-6 mb-10"
+        className="mx-auto mb-10 flex items-center justify-between gap-x-6"
       >
         <div className="flex lg:flex-1">
           <a href="/" className="">
@@ -27,10 +27,10 @@ export default function NavBarLight({}) {
           </a>
         </div>
 
-        <div className="flex flex-1 items-center justify-end gap-x-6">
+        <div className="hidden flex-1 items-center justify-end gap-x-6 md:flex">
           <Link
             href="/contact"
-            className="rounded-full bg-slate-900 px-5 py-2 text-white shadow-sm hover:bg-indigo-500  text-base transition-all duration-300 ease-in-out cursor-pointer"
+            className="cursor-pointer rounded-full bg-slate-900 px-5 py-2 text-base text-white shadow-sm transition-all duration-300 ease-in-out hover:bg-indigo-500"
           >
             Let's chat
           </Link>
@@ -39,10 +39,10 @@ export default function NavBarLight({}) {
           <button
             type="button"
             onClick={() => setMenuOpen(true)}
-            className="-m-2.5 inline-flex text-base items-center justify-center rounded-md p-2.5 text-slate-700"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-base text-slate-700"
           >
             <span className="sr-only">Open main menu</span>
-            <Bars2Icon aria-hidden="true" className="size-6 mr-2" />
+            <Bars2Icon aria-hidden="true" className="mr-2 size-6" />
             Menu
           </button>
         </div>
@@ -55,13 +55,13 @@ export default function NavBarLight({}) {
         />
 
         <DialogPanel
-          className="fixed top-0 rounded-bl-2xl right-0 z-10 w-full overflow-y-auto bg-white pl-10 py-5 sm:max-w-sm duration-300 data-[closed]:opacity-0 ease-in-out"
+          className="fixed right-0 top-0 z-10 w-full rounded-bl-2xl bg-white py-5 pl-10 duration-300 ease-in-out data-[closed]:opacity-0 sm:max-w-sm"
           transition
         >
-          <div className="flex justify-end items-center gap-x-6 pr-6">
+          <div className="flex items-center justify-end gap-x-6 pr-6">
             <Link
               href="/contact"
-              className="rounded-full bg-slate-900 px-5 py-2 text-white shadow-sm hover:bg-indigo-500  text-base transition-all duration-300 ease-in-out cursor-pointer"
+              className="cursor-pointer rounded-full bg-slate-900 px-5 py-2 text-base text-white shadow-sm transition-all duration-300 ease-in-out hover:bg-indigo-500"
             >
               Let's chat
             </Link>
@@ -76,12 +76,12 @@ export default function NavBarLight({}) {
           </div>
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-slate-500/10">
-              <div className="space-y-6 pt-10 pb-6">
+              <div className="space-y-6 pb-6 pt-10">
                 {navigation.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-4 text-slate-900 hover:bg-slate-50 text-3xl/7 font-light"
+                    className="-mx-3 block rounded-lg px-3 py-4 text-3xl/7 font-light text-slate-900 hover:bg-slate-50"
                   >
                     {item.name}
                   </a>
