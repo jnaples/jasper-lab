@@ -12,7 +12,7 @@ function ContactUsForm() {
   const { register, handleSubmit, formState, reset, isSubmitSuccessful } =
     useForm();
   const form = useRef();
-  const [successMessage, setSuccessMessage] = useState(true); // New state for success message
+  const [successMessage, setSuccessMessage] = useState(false); // New state for success message
 
   const { errors } = formState;
 
@@ -28,6 +28,7 @@ function ContactUsForm() {
       .then(
         () => {
           console.log("SUCCESS!");
+          setSuccessMessage(true);
           reset();
         },
         (error) => {
@@ -89,10 +90,12 @@ function ContactUsForm() {
           })}
         />
       </FormRow>
-      <Button text="Submit" type="submit" />
+      <Button text="Submit" type="submit" className="bg-slate-800" />
       {successMessage && (
-        <p className="mt-4 text-green-600">Form submitted successfully!</p>
-      )}{" "}
+        <p className="mt-4 text-green-500 font-light">
+          Form submitted successfully!
+        </p>
+      )}
     </form>
   );
 }

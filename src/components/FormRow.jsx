@@ -3,7 +3,7 @@ function FormRow({ label, error, children }) {
     <div className="mb-8 w-full">
       <label
         htmlFor={children.props.id}
-        className="block text-sm/6 font-medium text-gray-900"
+        className="block text-base font-light text-slate-400"
       >
         {label}
       </label>

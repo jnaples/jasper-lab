@@ -5,7 +5,7 @@ function Button({ text, type, className }) {
     <button
       type={type}
       className={clsx(
-        "rounded-full bg-slate-900 px-5 py-2 text-white shadow-sm hover:bg-indigo-500 text-base transition-all duration-300 ease-in-out cursor-pointer",
+        "rounded-full px-5 py-2 text-white shadow-sm hover:bg-indigo-800 text-base transition-all duration-300 ease-in-out cursor-pointer w-full lg:w-fit",
         className
       )}
     >
