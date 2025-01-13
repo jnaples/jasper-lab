@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import Image from "next/image";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -22,9 +23,15 @@ export default function NavBarLight({}) {
         className="mx-auto mb-10 flex items-center justify-between gap-x-6"
       >
         <div className="flex lg:flex-1">
-          <a href="/" className="">
-            <img alt="logo" src="/logo.png" className="w-36" />
-          </a>
+          <Link href="/" className="">
+            <Image
+              alt="logo"
+              src="/logo.png"
+              className="w-36"
+              width={144} // Example width (based on your `w-36` class, 9rem = 144px)
+              height={36}
+            />
+          </Link>
         </div>
 
         <div className="hidden flex-1 items-center justify-end gap-x-6 md:flex">
