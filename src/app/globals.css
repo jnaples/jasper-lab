@@ -4,7 +4,12 @@
 
 * {
   font-family: "Geist", sans-serif;
-  font-weight: 300;
+  font-weight: 200;
+}
+
+::selection {
+  background-color: #3730a3;
+  color: white;
 }
 
 input:-webkit-autofill,

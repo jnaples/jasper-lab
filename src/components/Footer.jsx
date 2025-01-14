@@ -7,9 +7,9 @@ const currentYear = new Date().getFullYear();
 
 export default function Footer() {
   return (
-    <Section className="mt-20 rounded-t-2xl bg-black">
+    <Section className="bg-black">
       <Container>
-        <footer className="">
+        <footer>
           <div className="mx-auto max-w-7xl pb-4 pt-12">
             <div className="flex w-full flex-col items-center justify-center gap-x-6">
               <Link href="/" className="">

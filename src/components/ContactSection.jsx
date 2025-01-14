@@ -9,14 +9,14 @@ function ContactSection() {
         <div className="mx-auto grid grid-cols-1 gap-20 py-20 lg:grid-cols-2">
           <div className="text-white lg:w-2/3">
             <h1 className="mb-20 text-7xl font-thin">Let's chat</h1>
-            <p className="mb-6 text-xl font-light">
+            <p className="mb-6 text-xl font-extralight">
               Want to learn more about our services or work with us?
             </p>
-            <p className="mb-6 text-xl font-light">
+            <p className="mb-6 text-xl font-extralight">
               Tell us about your idea, your timeline, how you heard about us,
               and where you’re located.
             </p>
-            <p className="mb-6 text-xl font-light">
+            <p className="mb-6 text-xl font-extralight">
               Thanks in advance and we'll respond promptly after receiving your
               message.
             </p>
