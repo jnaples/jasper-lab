@@ -17,14 +17,14 @@ export default function Hero() {
             design websites – we craft digital experiences that amplify your
             impact and success.
           </p>
-          <RoundCorner className="-bottom-4 h-4 w-4 scale-x-[-1] md:-left-4 md:bottom-0 md:top-0 md:rotate-90" />
-          <RoundCorner className="-bottom-4 right-0" />
+          <RoundCorner className="-bottom-4 h-4 w-4 scale-x-[-1] will-change-transform md:-left-4 md:bottom-0 md:top-0 md:rotate-90" />
+          <RoundCorner className="-bottom-4 right-0 will-change-transform" />
         </div>
 
         <div className="absolute bottom-0 left-0 z-10 rounded-tr-2xl bg-white">
           <div className="h-14 w-20"></div>
-          <RoundCorner className="-top-4 left-0 h-4 w-4 rotate-180" />
-          <RoundCorner className="-bottom-0 -right-4 rotate-180" />
+          <RoundCorner className="-top-4 left-0 h-4 w-4 rotate-180 will-change-transform" />
+          <RoundCorner className="-bottom-0 -right-4 rotate-180 will-change-transform" />
         </div>
 
         <video
