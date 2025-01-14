@@ -20,7 +20,7 @@ export default function NavBarDark() {
     <header className="">
       <nav
         aria-label="Global"
-        className="mx-auto mb-10 flex items-center justify-between gap-x-6"
+        className="mx-auto mb-10 flex items-center justify-between gap-x-6 p-4 lg:px-6"
       >
         <div className="flex lg:flex-1">
           <Link href="/" className="">
@@ -88,7 +88,7 @@ export default function NavBarDark() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-4 text-3xl/7 font-light text-white hover:bg-indigo-800"
+                    className="block rounded-bl-lg rounded-tl-lg px-3 py-4 text-3xl/7 font-light text-white hover:bg-indigo-800"
                   >
                     {item.name}
                   </a>
@@ -97,9 +97,9 @@ export default function NavBarDark() {
               <div className="py-6">
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 text-slate-400 hover:bg-indigo-800"
+                  className="block rounded-bl-lg rounded-tl-lg px-3 py-2.5 text-sm text-slate-400 hover:bg-indigo-800"
                 >
-                  Instagram
+                  contact@jasperlab.co
                 </a>
               </div>
             </div>

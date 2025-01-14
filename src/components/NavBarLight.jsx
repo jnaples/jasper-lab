@@ -20,7 +20,7 @@ export default function NavBarLight({}) {
     <header>
       <nav
         aria-label="Global"
-        className="mx-auto mb-10 flex items-center justify-between gap-x-6"
+        className="mx-auto mb-10 flex items-center justify-between gap-x-6 p-4 lg:px-6"
       >
         <div className="flex lg:flex-1">
           <Link href="/" className="">
@@ -88,7 +88,7 @@ export default function NavBarLight({}) {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-4 text-3xl/7 font-light text-slate-900 hover:bg-slate-50"
+                    className="block rounded-bl-lg rounded-tl-lg px-3 py-4 text-3xl/7 font-light text-slate-900 hover:bg-slate-100"
                   >
                     {item.name}
                   </a>
@@ -97,9 +97,9 @@ export default function NavBarLight({}) {
               <div className="py-6">
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 text-slate-900 hover:bg-slate-50"
+                  className="block rounded-bl-lg rounded-tl-lg px-3 py-2.5 text-sm text-slate-900 hover:bg-slate-100"
                 >
-                  Instagram
+                  contact@jasperlab.co
                 </a>
               </div>
             </div>
