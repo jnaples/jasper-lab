@@ -27,7 +27,7 @@ export default function Hero() {
             <RoundCorner className="-top-4 left-0 h-4 w-4 rotate-180 will-change-transform" />
             <RoundCorner className="-bottom-0 -right-4 rotate-180 will-change-transform" />
           </div>
-          ≈
+
           <video
             src="/hero-video.mp4"
             alt="hero video of geometric object"
