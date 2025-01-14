@@ -14,7 +14,7 @@ export default function RoundCorner({ className, ...props }) {
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M16 0.399902H0C8.837 0.399902 16 7.5629 16 16"
+        d="M16 0H0C8.837 0 16 7.163 16 16V0Z"
         fill="white"
       />
     </svg>

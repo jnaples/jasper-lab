@@ -6,8 +6,8 @@ const currentYear = new Date().getFullYear();
 export default function Footer() {
   return (
     <footer className="mt-20 rounded-t-2xl bg-black p-4 lg:px-6">
-      <div className="mx-auto max-w-7xl py-12 md:flex md:items-center md:justify-between">
-        <div className="flex w-full justify-between gap-x-6">
+      <div className="mx-auto max-w-7xl pt-12 pb-4">
+        <div className="flex w-full flex-col items-center justify-center gap-x-6">
           <Link href="/" className="">
             <Image
               alt="logo"
@@ -18,7 +18,7 @@ export default function Footer() {
               className="w-24"
             />
           </Link>
-          <p className="mt-8 text-center text-sm/6 font-thin text-slate-400 md:order-1 md:mt-0">
+          <p className="mt-8 text-center text-sm/6 font-thin text-slate-400">
             &copy; {currentYear} JasperLab, Inc. All rights reserved.
           </p>
         </div>
