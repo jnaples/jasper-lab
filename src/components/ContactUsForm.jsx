@@ -9,10 +9,12 @@ import FormRow from "./FormRow";
 import { useRef, useState } from "react";
 
 function ContactUsForm() {
-  const { register, handleSubmit, formState, reset, isSubmitSuccessful } =
-    useForm();
+  const { register, handleSubmit, formState, reset,  isSubmitting } = useForm();
   const form = useRef();
   const [successMessage, setSuccessMessage] = useState(false); // New state for success message
+
+
+
 
   const { errors } = formState;
 
@@ -47,7 +49,7 @@ function ContactUsForm() {
       onSubmit={handleSubmit(onSubmit, onError)}
       className="flex flex-col items-end w-full"
     >
-      <FormRow error={errors?.user_name?.message} label="Name *">
+      <FormRow error={errors?.user_name?.message} label="Name*">
         <Input
           id="user_name"
           name="user_name"
@@ -56,9 +58,10 @@ function ContactUsForm() {
           {...register("user_name", {
             required: "This field is required",
           })}
+          disabled={isSubmitting}
         />
       </FormRow>
-      <FormRow error={errors?.user_email?.message} label="Email *">
+      <FormRow error={errors?.user_email?.message} label="Email*">
         <Input
           id="email"
           name="user_email"
@@ -72,11 +75,11 @@ function ContactUsForm() {
               message: "Please enter a valid email",
             },
           })}
+          disabled={isSubmitting}
         />
       </FormRow>
-      <FormRow error={errors?.message?.message} label="Message *">
+      <FormRow error={errors?.message?.message} label="Message*">
         <TextArea
-          label="Message *"
           id="message"
           name="message"
           placeholder="How can we help?"
@@ -88,9 +91,10 @@ function ContactUsForm() {
               message: "Message must be at least 20 characters",
             },
           })}
+          disabled={isSubmitting}
         />
       </FormRow>
-      <Button text="Submit" type="submit" className="bg-slate-800" />
+      <Button text={isSubmitting ? "Submitting" : "Submit" } type="submit" className="bg-slate-800" disabled={isSubmitting}/>
       {successMessage && (
         <p className="mt-4 text-green-500 font-light">
           Form submitted successfully!

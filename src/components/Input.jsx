@@ -6,6 +6,7 @@ export default function Input({
   placeholder,
   className,
   error,
+  disabled,
   ...rest
 }) {
   return (
@@ -22,6 +23,7 @@ export default function Input({
         },
         className
       )}
+      disabled={disabled}
       {...rest}
     />
   );

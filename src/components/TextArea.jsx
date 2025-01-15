@@ -6,6 +6,7 @@ export default function TextArea({
   placeholder,
   className,
   error,
+  disabled,
   ...rest
 }) {
   return (
@@ -25,6 +26,7 @@ export default function TextArea({
             },
             className
           )}
+          disabled={disabled}
           {...rest}
         ></textarea>
       </div>

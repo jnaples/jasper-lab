@@ -1,6 +1,6 @@
 import clsx from "clsx";
 
-function Button({ text, type, className }) {
+function Button({ text, type, className, disabled }) {
   return (
     <button
       type={type}
@@ -8,6 +8,7 @@ function Button({ text, type, className }) {
         "w-full cursor-pointer rounded-full px-5 py-2 text-base text-white shadow-sm transition-all duration-300 ease-in-out hover:bg-indigo-800 md:w-fit",
         className,
       )}
+       disabled={disabled}
     >
       {text}
     </button>
