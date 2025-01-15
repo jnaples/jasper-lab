@@ -9,8 +9,7 @@ import Image from "next/image";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Contact", href: "/contact" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "Services", href: "#services" },
 ];
 
 export default function NavBarLight({}) {

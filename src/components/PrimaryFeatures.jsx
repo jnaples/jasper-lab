@@ -38,7 +38,7 @@ function PrimaryFeatures() {
   }, []);
 
   return (
-    <Section className="rounded-t-2xl bg-black py-28">
+    <Section className="rounded-t-2xl bg-black py-28" id="services">
       <Container>
         <h2 className="mb-20 max-w-screen-lg break-words text-4xl font-thin text-white md:text-7xl">
           Our superpowers
