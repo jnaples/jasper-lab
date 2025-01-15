@@ -36,7 +36,7 @@ export default function NavBarLight({}) {
         <div className="hidden flex-1 items-center justify-end gap-x-6 md:flex">
           <Link
             href="/contact"
-            className="cursor-pointer rounded-full bg-slate-900 px-5 py-2 text-base text-white shadow-sm transition-all duration-300 ease-in-out hover:bg-indigo-500"
+            className="cursor-pointer rounded-full bg-slate-900 px-5 py-2 text-base text-white shadow-sm transition-all duration-300 ease-in-out hover:bg-indigo-800"
           >
             Let's chat
           </Link>
@@ -67,7 +67,7 @@ export default function NavBarLight({}) {
           <div className="flex items-center justify-end gap-x-6 pr-6">
             <Link
               href="/contact"
-              className="cursor-pointer rounded-full bg-slate-900 px-5 py-2 text-base text-white shadow-sm transition-all duration-300 ease-in-out hover:bg-indigo-500"
+              className="cursor-pointer rounded-full bg-slate-900 px-5 py-2 text-base text-white shadow-sm transition-all duration-300 ease-in-out hover:bg-indigo-800"
             >
               Let's chat
             </Link>
