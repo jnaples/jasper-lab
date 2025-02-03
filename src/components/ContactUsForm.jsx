@@ -16,7 +16,7 @@ function ContactUsForm() {
   const { errors } = formState;
 
   const onSubmit = () => {
-    const serviceId = "service_6jw53gn";
+    const serviceId = "service_d439akw";
     const templateId = "template_w7v6sfr";
     const publicKey = "w46ioCf7kdV94lbvM";
 
