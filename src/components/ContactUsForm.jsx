@@ -15,10 +15,12 @@ function ContactUsForm() {
 
   const { errors } = formState;
 
-  const onSubmit = () => {
-    const serviceId = "service_6jw53gn";
+  const onSubmit = (data) => {
+    console.log(data);
+
+    const serviceId = "service_d439akw";
     const templateId = "template_gbe4t0v";
-    const publicKey = "E5uQ7Cp_5DdC5SddA";
+    const publicKey = "w46ioCf7kdV94lbvM";
 
     emailjs
       .sendForm(serviceId, templateId, form.current, {
