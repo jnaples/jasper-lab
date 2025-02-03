@@ -16,9 +16,9 @@ function ContactUsForm() {
   const { errors } = formState;
 
   const onSubmit = () => {
-    const serviceId = "service_d439akw";
+    const serviceId = "service_6jw53gn";
     const templateId = "template_gbe4t0v";
-    const publicKey = "w46ioCf7kdV94lbvM";
+    const publicKey = "E5uQ7Cp_5DdC5SddA";
 
     emailjs
       .sendForm(serviceId, templateId, form.current, {
