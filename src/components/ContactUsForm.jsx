@@ -9,19 +9,16 @@ import FormRow from "./FormRow";
 import { useRef, useState } from "react";
 
 function ContactUsForm() {
-  const { register, handleSubmit, formState, reset,  isSubmitting } = useForm();
+  const { register, handleSubmit, formState, reset, isSubmitting } = useForm();
   const form = useRef();
   const [successMessage, setSuccessMessage] = useState(false); // New state for success message
-
-
-
 
   const { errors } = formState;
 
   const onSubmit = () => {
     const serviceId = "service_6jw53gn";
-    const templateId = "template_594on48";
-    const publicKey = "E5uQ7Cp_5DdC5SddA";
+    const templateId = "template_w7v6sfr";
+    const publicKey = "w46ioCf7kdV94lbvM";
 
     emailjs
       .sendForm(serviceId, templateId, form.current, {
@@ -35,7 +32,7 @@ function ContactUsForm() {
         },
         (error) => {
           console.log("FAILED...", error.text);
-        }
+        },
       );
   };
 
@@ -47,7 +44,7 @@ function ContactUsForm() {
     <form
       ref={form}
       onSubmit={handleSubmit(onSubmit, onError)}
-      className="flex flex-col items-end w-full"
+      className="flex w-full flex-col items-end"
     >
       <FormRow error={errors?.user_name?.message} label="Name*">
         <Input
@@ -94,9 +91,14 @@ function ContactUsForm() {
           disabled={isSubmitting}
         />
       </FormRow>
-      <Button text={isSubmitting ? "Submitting" : "Submit" } type="submit" className="bg-slate-800" disabled={isSubmitting}/>
+      <Button
+        text={isSubmitting ? "Submitting" : "Submit"}
+        type="submit"
+        className="bg-slate-800"
+        disabled={isSubmitting}
+      />
       {successMessage && (
-        <p className="mt-4 text-green-500 font-light">
+        <p className="mt-4 font-light text-green-500">
           Form submitted successfully!
         </p>
       )}
