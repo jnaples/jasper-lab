@@ -17,7 +17,7 @@ function ContactUsForm() {
 
   const onSubmit = () => {
     const serviceId = "service_d439akw";
-    const templateId = "template_w7v6sfr";
+    const templateId = "template_gbe4t0v";
     const publicKey = "w46ioCf7kdV94lbvM";
 
     emailjs
