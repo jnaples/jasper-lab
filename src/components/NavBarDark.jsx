@@ -9,7 +9,7 @@ import Image from "next/image";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Contact", href: "/contact" },
-  { name: "Services", href: "/services" },
+  { name: "Services", href: "/" },
 ];
 
 export default function NavBarDark() {
