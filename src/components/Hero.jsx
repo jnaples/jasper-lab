@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import BlinkingSubHeading from "@/components/BlinkingSubHeading";
 import Container from "./Container";
 import Section from "./Section";
 import fors from "../../public/fors.webp";
@@ -10,11 +13,8 @@ export default function Hero() {
   return (
     <Section>
       <Container className="flex flex-col gap-16 p-4 lg:px-8">
-        <div className="flex w-full flex-col items-center gap-6">
-          <div className="flex items-center gap-2 text-xl">
-            <div className="h-2 w-2 rounded-full bg-orange-400"></div>
-            <p className="font-bold">Helped scale to aquisition</p>
-          </div>
+        <div className="flex w-full flex-col items-center gap-4">
+          <BlinkingSubHeading />
           <h1 className="mx-auto mb-10 max-w-[800px] break-words text-center text-6xl font-semibold tracking-tight md:text-6xl md:leading-tight">
             Design that brings{" "}
             <span
