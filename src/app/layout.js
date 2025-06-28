@@ -1,9 +1,17 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Figtree, Libre_Baskerville } from "next/font/google";
+
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const figTreeSans = Figtree({
+  variable: "--font-figtree-sans",
   subsets: ["latin"],
+});
+
+const playfair = Libre_Baskerville({
+  variable: "--font-fancy",
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal", "italic"],
 });
 
 export const metadata = {
@@ -14,7 +22,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} antialiased`}>{children}</body>
+      <body
+        className={`${figTreeSans.variable} ${playfair.variable} antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

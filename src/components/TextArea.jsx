@@ -18,13 +18,13 @@ export default function TextArea({
           placeholder={placeholder}
           rows="4"
           className={clsx(
-            "block w-full rounded-md bg-transparent px-3 py-1.5 text-base text-slate-200 outline outline-1 -outline-offset-1  placeholder:text-slate-400 focus:outline focus:outline-2 focus:-outline-offset-2  sm:text-sm/6 mb-2 focus:bg-transparent",
+            "mb-2 block w-full rounded-md bg-transparent px-3 py-1.5 text-base outline outline-1 -outline-offset-1 placeholder:text-gray-600 focus:bg-transparent focus:outline focus:outline-2 focus:-outline-offset-2",
             {
-              "outline-slate-600 focus:outline-indigo-600": !error,
-              "text-red-500 outline-red-300 placeholder:text-red-300 focus:outline-red-600":
+              "outline-gray-600 focus:outline-gray-600": !error,
+              "text-red-600 outline-red-300 placeholder:text-red-300 focus:outline-red-600":
                 error,
             },
-            className
+            className,
           )}
           disabled={disabled}
           {...rest}

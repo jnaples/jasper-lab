@@ -5,10 +5,10 @@ function Button({ text, type, className, disabled }) {
     <button
       type={type}
       className={clsx(
-        "w-full cursor-pointer rounded-full px-5 py-2 text-base text-white shadow-sm transition-all duration-300 ease-in-out hover:bg-indigo-800 md:w-fit",
+        "cursor-pointer rounded-full bg-black px-6 py-2.5 text-lg font-semibold text-white shadow-[0_0_0_5px_rgba(0,0,0,0.1)] transition-all duration-300 ease-in-out hover:shadow-[0_0_0_5px_rgba(0,0,0,0.3)]",
         className,
       )}
-       disabled={disabled}
+      disabled={disabled}
     >
       {text}
     </button>

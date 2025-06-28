@@ -1,14 +1,14 @@
 function FormRow({ label, error, children }) {
   return (
-    <div className="mb-8 w-full">
+    <div className="mb-4 w-full">
       <label
         htmlFor={children.props.id}
-        className="block text-base font-light text-slate-400"
+        className="block text-base font-medium"
       >
         {label}
       </label>
       {children}
-      {error && <p className="text-sm text-red-500">{error}</p>}
+      {error && <p className="text-sm text-red-600">{error}</p>}
     </div>
   );
 }

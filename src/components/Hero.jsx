@@ -1,46 +1,77 @@
+import Image from "next/image";
 import Container from "./Container";
-import RoundCorner from "./RoundCorner";
 import Section from "./Section";
+import fors from "../../public/fors.webp";
+import theresa from "../../public/theresa.webp";
+import zorus from "../../public/zorus.webp";
+import flowtask from "../../public/flowtask.webp";
 
 export default function Hero() {
   return (
     <Section>
-      <Container className="p-4 pb-32 lg:px-6">
-        <div className="w-full">
-          <h1 className="mx-auto mb-10 max-w-screen-lg break-words text-center text-6xl font-thin md:text-8xl">
-            Custom web design that drives results
+      <Container className="flex flex-col gap-16 p-4 lg:px-8">
+        <div className="flex w-full flex-col items-center gap-6">
+          <div className="flex items-center gap-2 text-xl">
+            <div className="h-2 w-2 rounded-full bg-orange-400"></div>
+            <p className="font-bold">Helped scale to aquisition</p>
+          </div>
+          <h1 className="mx-auto mb-10 max-w-[800px] break-words text-center text-6xl font-semibold tracking-tight md:text-6xl md:leading-tight">
+            Design that brings{" "}
+            <span
+              className="font-[var(--font-fancy),_serif] font-normal"
+              style={{ fontStyle: "italic" }}
+            >
+              customers
+            </span>
+            , not just{" "}
+            <span
+              className="font-[var(--font-fancy),_serif] font-normal"
+              style={{ fontStyle: "italic" }}
+            >
+              compliments
+            </span>
           </h1>
         </div>
-
-        <div className="relative h-[500px] rounded-2xl">
-          <div className="absolute right-0 top-[-1px] z-10 bg-white md:rounded-bl-2xl">
-            <p className="max-w-[500px] px-4 py-8 text-lg font-light md:p-10 lg:text-2xl">
-              For trailblazing brands and ambitious visionaries, we don’t just
-              design websites – we craft digital experiences that amplify your
-              impact and success.
-            </p>
-            <RoundCorner className="-bottom-4 h-4 w-4 scale-x-[-1] will-change-transform md:-left-4 md:bottom-0 md:top-0 md:rotate-90" />
-            <RoundCorner className="-bottom-4 right-0 will-change-transform" />
-          </div>
-          <div className="absolute bottom-0 left-0 z-10 rounded-tr-2xl bg-white">
-            <div className="h-14 w-20"></div>
-            <RoundCorner className="-top-4 left-0 h-4 w-4 rotate-180 will-change-transform" />
-            <RoundCorner className="-bottom-0 -right-4 rotate-180 will-change-transform" />
-          </div>
-
-          <video
-            src="/hero-video.mp4"
-            alt="hero video of geometric object"
-            className="h-full w-full rounded-2xl object-cover"
-            priority="true"
-            sizes="100%"
-            autoPlay
-            muted
-            loop
-            playsInline
-          ></video>
-        </div>
       </Container>
+
+      <div className="flex gap-2 overflow-scroll">
+        <div className="h-[400px] w-[600px] rounded-xl border border-slate-200 p-3">
+          <div className="relative aspect-video h-full w-full">
+            <Image
+              src={zorus}
+              fill
+              className="flex-shrink-0 rounded-lg object-cover object-top"
+            />
+          </div>
+        </div>
+        <div className="h-[400px] w-[600px] rounded-xl border border-slate-200 p-3">
+          <div className="relative aspect-video h-full w-full">
+            <Image
+              src={flowtask}
+              fill
+              className="flex-shrink-0 rounded-lg object-cover object-top"
+            />
+          </div>
+        </div>
+        <div className="h-[400px] w-[600px] rounded-xl border border-slate-200 p-3">
+          <div className="relative aspect-video h-full w-full">
+            <Image
+              src={theresa}
+              fill
+              className="flex-shrink-0 rounded-lg object-cover object-top"
+            />
+          </div>
+        </div>
+        <div className="h-[400px] w-[600px] rounded-xl border border-slate-200 p-3">
+          <div className="relative aspect-video h-full w-full">
+            <Image
+              src={fors}
+              fill
+              className="flex-shrink-0 rounded-lg object-cover object-top"
+            />
+          </div>
+        </div>
+      </div>
     </Section>
   );
 }

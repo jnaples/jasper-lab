@@ -96,13 +96,10 @@ function ContactUsForm() {
       <Button
         text={isSubmitting ? "Submitting" : "Submit"}
         type="submit"
-        className="bg-slate-800"
         disabled={isSubmitting}
       />
       {successMessage && (
-        <p className="mt-4 font-light text-green-500">
-          Form submitted successfully!
-        </p>
+        <p className="mt-4 text-green-600">Form submitted successfully!</p>
       )}
     </form>
   );

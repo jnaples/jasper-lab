@@ -7,25 +7,13 @@ const currentYear = new Date().getFullYear();
 
 export default function Footer() {
   return (
-    <Section className="bg-black">
+    <Section className="">
       <Container>
         <footer>
-          <div className="mx-auto max-w-7xl pb-4 pt-12">
-            <div className="flex w-full flex-col items-center justify-center gap-x-6">
-              <Link href="/" className="">
-                <Image
-                  alt="logo"
-                  src="/logo-dark.png"
-                  width={96}
-                  height={24}
-                  sizes="100vw"
-                  className="w-24"
-                />
-              </Link>
-              <p className="mt-8 text-center text-sm/6 font-thin text-slate-400">
-                &copy; {currentYear} JasperLab, Inc. All rights reserved.
-              </p>
-            </div>
+          <div className="mx-auto border-t border-gray-200 pb-4">
+            <p className="mt-8 text-center text-sm text-gray-500">
+              &copy; {currentYear} JasperLab, Inc. All rights reserved.
+            </p>
           </div>
         </footer>
       </Container>

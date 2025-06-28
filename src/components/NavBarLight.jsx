@@ -16,95 +16,32 @@ export default function NavBarLight({}) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header>
+    <header className="sticky top-0 z-10 bg-white md:bg-transparent">
       <nav
         aria-label="Global"
-        className="mx-auto mb-10 flex items-center justify-between gap-x-6 p-4 lg:px-6"
+        className="mx-auto mb-10 flex items-center justify-between gap-x-6 p-4 lg:p-8"
       >
         <div className="flex lg:flex-1">
           <Link href="/" className="">
             <Image
               alt="logo"
               src="/logo.png"
-              className="w-36"
-              width={144} // Example width (based on your `w-36` class, 9rem = 144px)
+              className="w-40 md:w-48"
+              width={144}
               height={36}
             />
           </Link>
         </div>
 
-        <div className="hidden flex-1 items-center justify-end gap-x-6 md:flex">
+        <div className="flex flex-1 items-center justify-end gap-x-6">
           <Link
             href="/contact"
-            className="cursor-pointer rounded-full bg-slate-900 px-5 py-2 text-base text-white shadow-sm transition-all duration-300 ease-in-out hover:bg-indigo-800"
+            className="cursor-pointer rounded-full bg-black px-6 py-2.5 text-lg font-semibold text-white shadow-[0_0_0_5px_rgba(0,0,0,0.1)] transition-all duration-300 ease-in-out hover:shadow-[0_0_0_5px_rgba(0,0,0,0.3)]"
           >
-            Let's chat
+            Talk to us
           </Link>
         </div>
-        <div className="flex">
-          <button
-            type="button"
-            onClick={() => setMenuOpen(true)}
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-base text-slate-700"
-          >
-            <span className="sr-only">Open main menu</span>
-            <Bars2Icon aria-hidden="true" className="mr-2 size-6" />
-            Menu
-          </button>
-        </div>
       </nav>
-
-      <Dialog open={menuOpen} onClose={setMenuOpen}>
-        <DialogBackdrop
-          className="fixed inset-0 z-10 bg-black/25 backdrop-blur-sm"
-          transition
-        />
-
-        <DialogPanel
-          className="fixed right-0 top-0 z-10 w-full rounded-bl-2xl bg-white py-5 pl-10 duration-300 ease-in-out data-[closed]:opacity-0 sm:max-w-sm"
-          transition
-        >
-          <div className="flex items-center justify-end gap-x-6 pr-6">
-            <Link
-              href="/contact"
-              className="cursor-pointer rounded-full bg-slate-900 px-5 py-2 text-base text-white shadow-sm transition-all duration-300 ease-in-out hover:bg-indigo-800"
-            >
-              Let's chat
-            </Link>
-            <button
-              type="button"
-              onClick={() => setMenuOpen(false)}
-              className="-m-2.5 rounded-md p-2.5 text-slate-700"
-            >
-              <span className="sr-only">Close menu</span>
-              <XMarkIcon aria-hidden="true" className="size-6" />
-            </button>
-          </div>
-          <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-slate-500/10">
-              <div className="space-y-6 pb-6 pt-10">
-                {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="block rounded-bl-lg rounded-tl-lg px-3 py-4 text-3xl/7 font-light text-slate-900 hover:bg-slate-100"
-                  >
-                    {item.name}
-                  </a>
-                ))}
-              </div>
-              <div className="py-6">
-                <a
-                  href="#"
-                  className="block rounded-bl-lg rounded-tl-lg px-3 py-2.5 text-sm text-slate-900 hover:bg-slate-100"
-                >
-                  contact@jasperlab.co
-                </a>
-              </div>
-            </div>
-          </div>
-        </DialogPanel>
-      </Dialog>
     </header>
   );
 }

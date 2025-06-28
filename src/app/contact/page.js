@@ -1,12 +1,12 @@
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
-import NavBarDark from "@/components/NavBarDark";
+import NavBarLight from "@/components/NavBarLight";
 
 function ContactPage() {
   return (
-    <div className="bg-black">
+    <div className="">
       <div className="min-h-screen">
-        <NavBarDark />
+        <NavBarLight />
         <ContactSection />
       </div>
       <Footer />
