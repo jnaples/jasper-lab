@@ -94,6 +94,7 @@ function ContactUsForm() {
         />
       </FormRow>
       <Button
+        className="w-full md:w-fit"
         text={isSubmitting ? "Submitting" : "Submit"}
         type="submit"
         disabled={isSubmitting}
