@@ -16,10 +16,10 @@ export default function NavBarLight({}) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-10 bg-white/60 backdrop-blur-sm">
+    <header className="sticky top-0 z-10 bg-white/70 backdrop-blur-sm md:mt-4">
       <nav
         aria-label="Global"
-        className="mx-auto mb-4 flex items-center justify-between gap-x-6 p-4 lg:p-8"
+        className="mx-auto mb-4 flex items-center justify-between gap-x-6 p-4 lg:px-8 lg:py-4"
       >
         <div className="flex lg:flex-1">
           <Link href="/" className="">
