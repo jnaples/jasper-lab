@@ -16,7 +16,7 @@ export default function FinalCTA() {
           <h2 className="text-center text-4xl font-semibold">
             Let's grow your business today.
           </h2>
-          <div className="mx-auto w-2/4">
+          <div className="mx-auto w-full md:w-2/3 lg:w-1/2">
             <ContactUsForm />
           </div>
         </div>
