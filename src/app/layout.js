@@ -16,7 +16,8 @@ const playfair = Libre_Baskerville({
 
 export const metadata = {
   title: "JasperLab",
-  description: "Crafting the future of web design",
+  description: "Design that drives customers",
+  themeColor: "#f97316",
 };
 
 export default function RootLayout({ children }) {
