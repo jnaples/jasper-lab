@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 const TypewriterAchievements = () => {
   const achievements = [
     "Helped scale to acquisition",
-    "Helped increase leads by 3000%",
+    "Helped go from 0 to 6,000+ leads",
     "Helped increase ARR by $250,000+",
   ];
 
