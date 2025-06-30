@@ -7,7 +7,7 @@ import ContactUsForm from "./ContactUsForm";
 
 export default function FinalCTA() {
   return (
-    <Section className="py-20">
+    <Section className="py-20" id="talk-to-us">
       <Container>
         <div className="flex flex-col items-center gap-8">
           <div className="relative aspect-square h-20 w-20">

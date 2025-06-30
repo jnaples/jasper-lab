@@ -43,7 +43,7 @@ const TypewriterAchievements = () => {
   }, [currentIndex, displayText, isTyping, achievements]);
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="items-top flex justify-center">
       <style jsx>{`
         @keyframes dot-blink {
           0%,
@@ -60,15 +60,15 @@ const TypewriterAchievements = () => {
       `}</style>
       <div className="max-w-2xl text-center">
         <div
-          className="flex min-h-[3rem] items-center justify-center gap-2 text-2xl transition-opacity duration-500 md:text-xl/3"
+          className="flex items-center justify-center gap-2 text-2xl transition-opacity duration-500 md:text-xl/3"
           style={{ opacity }}
         >
           <div
-            className={`h-2 w-2 rounded-full bg-orange-400 ${
+            className={`h-2 w-2 rounded-full bg-orange-500 ${
               isTyping ? "dot-blink" : ""
             }`}
           ></div>
-          <p className="font-bold">
+          <p className="text-base font-bold md:text-2xl">
             {displayText}
             {isTyping &&
               displayText.length < achievements[currentIndex].length && (

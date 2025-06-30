@@ -35,7 +35,7 @@ export default function NavBarLight({}) {
 
         <div className="flex flex-1 items-center justify-end gap-x-6">
           <Link
-            href="/contact"
+            href="#talk-to-us"
             className="cursor-pointer rounded-full bg-black px-6 py-2.5 text-lg font-semibold text-white shadow-[0_0_0_5px_rgba(0,0,0,0.1)] transition-all duration-300 ease-in-out hover:shadow-[0_0_0_5px_rgba(0,0,0,0.3)]"
           >
             Talk to us

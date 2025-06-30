@@ -15,7 +15,7 @@ export default function Hero() {
       <Container className="flex flex-col gap-16 p-4 lg:px-8">
         <div className="flex w-full flex-col items-center gap-4">
           <BlinkingSubHeading />
-          <h1 className="mx-auto mb-10 max-w-[800px] break-words text-center text-6xl font-semibold tracking-tight md:text-6xl md:leading-tight">
+          <h1 className="mx-auto mb-10 max-w-[800px] break-words text-center text-6xl/[1.1] font-semibold tracking-tight md:leading-tight">
             Design that brings{" "}
             <span
               className="font-[var(--font-fancy),_serif] font-normal"
@@ -35,7 +35,7 @@ export default function Hero() {
       </Container>
 
       <div className="flex gap-2 overflow-scroll">
-        <div className="h-[400px] w-[600px] rounded-xl border border-slate-200 p-3">
+        <div className="h-[220px] w-[350px] rounded-xl border border-slate-200 p-3 md:h-[400px] md:w-[600px]">
           <div className="relative aspect-video h-full w-full">
             <Image
               src={zorus}
@@ -44,7 +44,7 @@ export default function Hero() {
             />
           </div>
         </div>
-        <div className="h-[400px] w-[600px] rounded-xl border border-slate-200 p-3">
+        <div className="h-[220px] w-[350px] rounded-xl border border-slate-200 p-3 md:h-[400px] md:w-[600px]">
           <div className="relative aspect-video h-full w-full">
             <Image
               src={flowtask}
@@ -53,7 +53,7 @@ export default function Hero() {
             />
           </div>
         </div>
-        <div className="h-[400px] w-[600px] rounded-xl border border-slate-200 p-3">
+        <div className="h-[220px] w-[350px] rounded-xl border border-slate-200 p-3 md:h-[400px] md:w-[600px]">
           <div className="relative aspect-video h-full w-full">
             <Image
               src={theresa}
@@ -62,7 +62,7 @@ export default function Hero() {
             />
           </div>
         </div>
-        <div className="h-[400px] w-[600px] rounded-xl border border-slate-200 p-3">
+        <div className="h-[220px] w-[350px] rounded-xl border border-slate-200 p-3 md:h-[400px] md:w-[600px]">
           <div className="relative aspect-video h-full w-full">
             <Image
               src={fors}
