@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import NavBarLight from "@/components/NavBarLight";
 import NavBar from "@/components/NavBarLight";
 import PrimaryFeatures from "@/components/PrimaryFeatures";
+import Services from "@/components/Services";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <div className="relative min-h-screen">
         <NavBarLight />
         <Hero />
+        <Services />
         <FinalCTA />
       </div>
       <Footer />

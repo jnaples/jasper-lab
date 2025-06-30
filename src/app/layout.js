@@ -17,12 +17,14 @@ const playfair = Libre_Baskerville({
 export const metadata = {
   title: "JasperLab",
   description: "Design that drives customers",
-  themeColor: "#f97316",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="theme-color" content="#f97316" />
+      </head>
       <body
         className={`${figTreeSans.variable} ${playfair.variable} antialiased`}
       >
