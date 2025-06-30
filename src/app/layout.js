@@ -22,9 +22,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <meta name="theme-color" content="#f97316" />
-      </head>
       <body
         className={`${figTreeSans.variable} ${playfair.variable} antialiased`}
       >
