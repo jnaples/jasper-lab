@@ -13,6 +13,21 @@ export function FAQAccordion() {
         className="space-y-4 rounded-xl p-6 transition-colors duration-200 data-[state=open]:bg-gray-100"
       >
         <AccordionTrigger className="text-xl font-bold">
+          What's your process?
+        </AccordionTrigger>
+        <AccordionContent>
+          We start with a deep dive to understand your goals, then map a design
+          plan with weekly milestones. You’ll get regular updates and quick
+          replies so that you’re always in the loop without needing to
+          micromanage.
+        </AccordionContent>
+      </AccordionItem>
+
+      <AccordionItem
+        value="item-2"
+        className="space-y-4 rounded-xl p-6 transition-colors duration-200 data-[state=open]:bg-gray-100"
+      >
+        <AccordionTrigger className="text-xl font-bold">
           How do I share feedback?
         </AccordionTrigger>
         <AccordionContent>
@@ -24,8 +39,8 @@ export function FAQAccordion() {
       </AccordionItem>
 
       <AccordionItem
-        value="item-2"
-        className="rounded-xl p-6 transition-colors duration-200 data-[state=open]:bg-gray-100"
+        value="item-3"
+        className="space-y-4 rounded-xl p-6 transition-colors duration-200 data-[state=open]:bg-gray-100"
       >
         <AccordionTrigger className="text-xl font-bold">
           What if it’s not quite what I imagined?
@@ -38,23 +53,8 @@ export function FAQAccordion() {
       </AccordionItem>
 
       <AccordionItem
-        value="item-3"
-        className="rounded-xl p-6 transition-colors duration-200 data-[state=open]:bg-gray-100"
-      >
-        <AccordionTrigger className="text-xl font-bold">
-          What's your process?
-        </AccordionTrigger>
-        <AccordionContent>
-          We start with a deep dive to understand your goals, then map a design
-          plan with weekly milestones. You’ll get regular updates and quick
-          replies so that you’re always in the loop without needing to
-          micromanage.
-        </AccordionContent>
-      </AccordionItem>
-
-      <AccordionItem
         value="item-4"
-        className="rounded-xl p-6 transition-colors duration-200 data-[state=open]:bg-gray-100"
+        className="space-y-4 rounded-xl p-6 transition-colors duration-200 data-[state=open]:bg-gray-100"
       >
         <AccordionTrigger className="text-xl font-bold">
           Can we hop on calls?
