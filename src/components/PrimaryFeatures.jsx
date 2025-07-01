@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import Container from "./Container";
+import Container from "./ui/Container";
 import FeatureCard from "./FeatureCard";
 import Section from "./Section";
 

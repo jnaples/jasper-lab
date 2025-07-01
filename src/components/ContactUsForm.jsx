@@ -1,11 +1,11 @@
 "use client";
 
 import emailjs from "@emailjs/browser";
-import Input from "./Input";
-import TextArea from "./TextArea";
-import Button from "./Button";
+import Input from "./ui/Input";
+import TextArea from "./ui/TextArea";
+import Button from "./ui/Button";
 import { useForm } from "react-hook-form";
-import FormRow from "./FormRow";
+import FormRow from "./ui/FormRow";
 import { useRef, useState } from "react";
 
 function ContactUsForm() {

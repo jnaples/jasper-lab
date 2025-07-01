@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import BlinkingSubHeading from "@/components/BlinkingSubHeading";
-import Container from "./Container";
+import Container from "./ui/Container";
 import Section from "./Section";
 import fors from "../../public/fors.webp";
 import theresa from "../../public/theresa.webp";
@@ -15,17 +15,17 @@ export default function Hero() {
       <Container className="flex flex-col gap-16 p-4 lg:px-8">
         <div className="flex w-full flex-col items-center gap-4">
           <BlinkingSubHeading />
-          <h1 className="mx-auto mb-10 max-w-[800px] break-words text-center text-6xl/[1.1] font-semibold tracking-tight md:leading-tight">
+          <h1 className="mx-auto mb-10 max-w-[800px] break-words text-center text-6xl/[1.1] font-bold tracking-tight md:leading-tight">
             Design that brings{" "}
             <span
-              className="font-[var(--font-fancy),_serif] font-normal"
+              className="font-[var(--font-fancy),_serif] font-medium"
               style={{ fontStyle: "italic" }}
             >
               customers
             </span>
             , not just{" "}
             <span
-              className="font-[var(--font-fancy),_serif] font-normal"
+              className="font-[var(--font-fancy),_serif] font-medium"
               style={{ fontStyle: "italic" }}
             >
               compliments

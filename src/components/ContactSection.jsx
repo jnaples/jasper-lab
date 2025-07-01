@@ -1,5 +1,5 @@
 import ContactUsForm from "./ContactUsForm";
-import Container from "./Container";
+import Container from "./ui/Container";
 import Section from "./Section";
 
 function ContactSection() {

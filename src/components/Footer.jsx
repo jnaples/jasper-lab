@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Section from "./Section";
-import Container from "./Container";
+import Container from "./ui/Container";
 
 const currentYear = new Date().getFullYear();
 

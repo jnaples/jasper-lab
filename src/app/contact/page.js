@@ -1,6 +1,6 @@
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
-import NavBarLight from "@/components/NavBarLight";
+import NavBarLight from "@/components/ui/NavBarLight";
 
 function ContactPage() {
   return (
