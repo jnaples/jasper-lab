@@ -41,6 +41,8 @@ export default function Hero() {
               src={zorus}
               fill
               className="flex-shrink-0 rounded-lg object-cover object-top"
+              alt="Start up"
+              priority
             />
           </div>
         </div>
@@ -50,6 +52,7 @@ export default function Hero() {
               src={flowtask}
               fill
               className="flex-shrink-0 rounded-lg object-cover object-top"
+              alt="FlowTask"
             />
           </div>
         </div>
@@ -59,6 +62,7 @@ export default function Hero() {
               src={theresa}
               fill
               className="flex-shrink-0 rounded-lg object-cover object-top"
+              alt="Your Biz Blueprint"
             />
           </div>
         </div>
@@ -68,6 +72,7 @@ export default function Hero() {
               src={fors}
               fill
               className="flex-shrink-0 rounded-lg object-cover object-top"
+              alt="Fors Legal"
             />
           </div>
         </div>

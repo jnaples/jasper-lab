@@ -7,11 +7,11 @@ import ContactUsForm from "./ContactUsForm";
 
 export default function FinalCTA() {
   return (
-    <Section className="py-10 md:py-20" id="talk-to-us">
+    <Section className="py-10 md:pb-0 md:pt-20" id="talk-to-us">
       <Container>
         <div className="flex flex-col items-center gap-8">
           <div className="relative aspect-square h-20 w-20">
-            <Image src={cube} fill className="object-cover" />
+            <Image src={cube} fill className="object-cover" alt="logo" />
           </div>
           <h2 className="text-center text-4xl font-bold">
             Let's grow your business today.

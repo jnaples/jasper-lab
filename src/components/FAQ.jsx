@@ -4,7 +4,7 @@ import { Accordion, FAQAccordion } from "./ui/FAQAccordion";
 
 export default function FAQ() {
   return (
-    <Section className="pb-10 pt-20 md:py-20">
+    <Section className="py-10 md:pb-0 md:pt-20">
       <Container>
         <div className="mx-auto w-full space-y-6 md:w-2/3 lg:w-1/2">
           <div className="space-y-2 px-6 font-bold">
