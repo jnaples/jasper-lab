@@ -11,7 +11,7 @@ export default function Home() {
       <div className="relative min-h-screen">
         <NavBarLight />
         <Hero />
-
+        <Services />
         <FAQ />
         <FinalCTA />
       </div>
