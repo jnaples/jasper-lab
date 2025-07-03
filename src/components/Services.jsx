@@ -54,7 +54,7 @@ export default function Services() {
               />
             </div>
 
-            <p className="mb-3 text-2xl font-bold">
+            <p className="mb-1 text-2xl font-bold">
               Web Design/
               <br />
               Redesign
@@ -82,7 +82,7 @@ export default function Services() {
               />
             </div>
 
-            <p className="mb-3 text-2xl font-bold">
+            <p className="mb-1 text-2xl font-bold">
               UI/UX Design
               <br />
               for Apps
@@ -106,7 +106,7 @@ export default function Services() {
                 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
               />
             </div>
-            <p className="mb-3 text-2xl font-bold">
+            <p className="mb-1 text-2xl font-bold">
               Landing Pages
               <br />& Funnels
             </p>
@@ -132,7 +132,7 @@ export default function Services() {
                 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
               />
             </div>
-            <p className="mb-3 text-2xl font-bold">
+            <p className="mb-1 text-2xl font-bold">
               Paid Digital Ads
               <br />
               to scale fast
@@ -159,7 +159,7 @@ export default function Services() {
                 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
               />
             </div>
-            <p className="mb-3 text-2xl font-bold">
+            <p className="mb-1 text-2xl font-bold">
               Top-notch team
               <br /> of experts
             </p>
