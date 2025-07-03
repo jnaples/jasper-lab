@@ -37,7 +37,7 @@ export default function Services() {
         </div>
         <div className="grid grid-cols-1 gap-10 md:grid-cols-3 lg:grid-cols-5">
           <div className="col-span-1">
-            <div className="relative mb-4 aspect-square h-[160px] md:h-[200px] w-full md:max-w-[200px]">
+            <div className="relative mb-4 aspect-square h-[160px] w-full md:h-[200px] md:max-w-[200px]">
               <Image
                 src={meshOne}
                 fill
@@ -65,7 +65,7 @@ export default function Services() {
             </p>
           </div>
           <div className="col-span-1">
-            <div className="relative mb-4 aspect-square h-[160px] md:h-[200px] w-full md:max-w-[200px]">
+            <div className="relative mb-4 aspect-square h-[160px] w-full md:h-[200px] md:max-w-[200px]">
               <Image
                 src={meshTwo}
                 fill
@@ -90,7 +90,7 @@ export default function Services() {
             <p>Create modern, intuitive experiences users love.</p>
           </div>
           <div className="col-span-1">
-            <div className="relative mb-4 aspect-square h-[160px] md:h-[200px] w-full md:max-w-[200px]">
+            <div className="relative mb-4 aspect-square h-[160px] w-full md:h-[200px] md:max-w-[200px]">
               <Image
                 src={meshThree}
                 fill
@@ -116,7 +116,7 @@ export default function Services() {
             </p>
           </div>
           <div className="col-span-1">
-            <div className="relative mb-4 aspect-square h-[160px] md:h-[200px] w-full md:max-w-[200px]">
+            <div className="relative mb-4 aspect-square h-[160px] w-full md:h-[200px] md:max-w-[200px]">
               <Image
                 src={meshFour}
                 fill
@@ -135,7 +135,7 @@ export default function Services() {
             <p className="mb-1 text-2xl font-bold">
               Paid Digital Ads
               <br />
-              to scale fast
+              to Scale Fast
             </p>
             <p>
               Drive more customers to your business with data-backed ad
@@ -143,7 +143,7 @@ export default function Services() {
             </p>
           </div>
           <div className="col-span-1">
-            <div className="relative mb-4 aspect-square h-[160px] md:h-[200px] w-full md:max-w-[200px]">
+            <div className="relative mb-4 aspect-square h-[160px] w-full md:h-[200px] md:max-w-[200px]">
               <Image
                 src={meshFive}
                 fill
@@ -160,8 +160,8 @@ export default function Services() {
               />
             </div>
             <p className="mb-1 text-2xl font-bold">
-              Top-notch team
-              <br /> of experts
+              Top-notch Team
+              <br /> of Experts
             </p>
             <p>
               Expert-level design and marketing quality to scale your business.
