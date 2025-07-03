@@ -19,19 +19,25 @@ export default function Services() {
       <Container>
         <div className="mx-auto mb-10 w-full space-y-6 md:w-2/3 lg:w-1/2">
           <h3 className="text-center text-4xl font-bold md:text-6xl/[1.1]">
-            It's{" "}
+            Everything you need to turn{" "}
             <span
               className="font-[var(--font-fancy),_serif] font-medium"
               style={{ fontStyle: "italic" }}
             >
-              "where have you been all my life"
+              clicks
             </span>{" "}
-            better
+            into{" "}
+            <span
+              className="font-[var(--font-fancy),_serif] font-medium"
+              style={{ fontStyle: "italic" }}
+            >
+              customers
+            </span>
           </h3>
         </div>
-        <div className="grid gap-10 md:grid-cols-3 lg:grid-cols-5">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-3 lg:grid-cols-5">
           <div className="col-span-1">
-            <div className="relative mb-4 aspect-square h-[200px] w-full max-w-[200px]">
+            <div className="relative mb-4 aspect-square h-[160px] md:h-[200px] w-full md:max-w-[200px]">
               <Image
                 src={meshOne}
                 fill
@@ -59,7 +65,7 @@ export default function Services() {
             </p>
           </div>
           <div className="col-span-1">
-            <div className="relative mb-4 aspect-square h-[200px] w-full max-w-[200px]">
+            <div className="relative mb-4 aspect-square h-[160px] md:h-[200px] w-full md:max-w-[200px]">
               <Image
                 src={meshTwo}
                 fill
@@ -84,7 +90,7 @@ export default function Services() {
             <p>Create modern, intuitive experiences users love.</p>
           </div>
           <div className="col-span-1">
-            <div className="relative mb-4 aspect-square h-[200px] w-full max-w-[200px]">
+            <div className="relative mb-4 aspect-square h-[160px] md:h-[200px] w-full md:max-w-[200px]">
               <Image
                 src={meshThree}
                 fill
@@ -110,7 +116,7 @@ export default function Services() {
             </p>
           </div>
           <div className="col-span-1">
-            <div className="relative mb-4 aspect-square h-[200px] w-full max-w-[200px]">
+            <div className="relative mb-4 aspect-square h-[160px] md:h-[200px] w-full md:max-w-[200px]">
               <Image
                 src={meshFour}
                 fill
@@ -137,7 +143,7 @@ export default function Services() {
             </p>
           </div>
           <div className="col-span-1">
-            <div className="relative mb-4 aspect-square h-[200px] w-full max-w-[200px]">
+            <div className="relative mb-4 aspect-square h-[160px] md:h-[200px] w-full md:max-w-[200px]">
               <Image
                 src={meshFive}
                 fill
@@ -158,7 +164,7 @@ export default function Services() {
               <br /> of experts
             </p>
             <p>
-              Expert-level design & marketing quality to scale your business.
+              Expert-level design and marketing quality to scale your business.
               it.
             </p>
           </div>
