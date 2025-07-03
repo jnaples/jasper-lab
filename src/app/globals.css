@@ -7,6 +7,10 @@ body {
   font-weight: 400;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ::selection {
   background-color: #000;
   color: white;
