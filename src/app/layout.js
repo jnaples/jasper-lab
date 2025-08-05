@@ -1,4 +1,5 @@
 import { Figtree, Libre_Baskerville } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 
 import "./globals.css";
 
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
         className={`${figTreeSans.variable} ${playfair.variable} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );

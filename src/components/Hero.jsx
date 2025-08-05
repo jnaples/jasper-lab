@@ -8,6 +8,8 @@ import fors from "../../public/fors.webp";
 import theresa from "../../public/theresa.webp";
 import zorus from "../../public/zorus.webp";
 import flowtask from "../../public/flowtask.webp";
+import krido from "../../public/krido.webp";
+import nguyen from "../../public/nguyen.webp";
 
 export default function Hero() {
   return (
@@ -59,6 +61,16 @@ export default function Hero() {
         <div className="h-[220px] w-[350px] rounded-xl border border-slate-200 p-3 md:h-[400px] md:w-[600px]">
           <div className="relative aspect-video h-full w-full">
             <Image
+              src={krido}
+              fill
+              className="flex-shrink-0 rounded-lg object-cover object-top"
+              alt="KRIDO Wellness"
+            />
+          </div>
+        </div>
+        <div className="h-[220px] w-[350px] rounded-xl border border-slate-200 p-3 md:h-[400px] md:w-[600px]">
+          <div className="relative aspect-video h-full w-full">
+            <Image
               src={theresa}
               fill
               className="flex-shrink-0 rounded-lg object-cover object-top"
@@ -73,6 +85,16 @@ export default function Hero() {
               fill
               className="flex-shrink-0 rounded-lg object-cover object-top"
               alt="Fors Legal"
+            />
+          </div>
+        </div>
+        <div className="h-[220px] w-[350px] rounded-xl border border-slate-200 p-3 md:h-[400px] md:w-[600px]">
+          <div className="relative aspect-video h-full w-full">
+            <Image
+              src={nguyen}
+              fill
+              className="flex-shrink-0 rounded-lg object-cover object-top"
+              alt="The Nguyen Law Firm"
             />
           </div>
         </div>

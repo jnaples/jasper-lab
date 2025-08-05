@@ -150,7 +150,7 @@ export default function Services() {
                 className="rounded-3xl object-cover object-top"
                 alt="Start up"
                 priority
-              />{" "}
+              />
               <Image
                 src={star}
                 width={80}
